@@ -1,4 +1,7 @@
-/* Google Font */
+/* ===========================
+   Global Styles
+=========================== */
+
 *{
     margin:0;
     padding:0;
@@ -6,24 +9,75 @@
     font-family:'Poppins',sans-serif;
 }
 
-/* Smooth scrolling */
 html{
     scroll-behavior:smooth;
 }
 
-/* Body */
 body{
     background:#0f172a;
     color:white;
-    min-height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
-/* Temporary Heading */
-h1{
-    font-size:3rem;
+/* ===========================
+      Navigation Bar
+=========================== */
+
+.navbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 8%;
+
+    background:#0f172a;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.logo span{
+
     color:#38bdf8;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#38bdf8;
+
 }
