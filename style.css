@@ -1,0 +1,29 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Body */
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Temporary Heading */
+h1{
+    font-size:3rem;
+    color:#38bdf8;
+}
