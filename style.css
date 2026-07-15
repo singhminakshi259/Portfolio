@@ -1009,3 +1009,185 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+/*====================================
+
+RESPONSIVE DESIGN
+
+=====================================*/
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:60px;
+
+    }
+
+    .hero-content{
+
+        align-items:center;
+
+    }
+
+    .projects-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .semester-results{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    /* Navigation */
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+    /* Hero */
+
+    .hero{
+
+        padding-top:150px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .hero-image img{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+    /* About */
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Skills */
+
+    .skills-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    /* Projects */
+
+    .projects-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Education */
+
+    .semester-results{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .school-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Contact */
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .section-header .title{
+
+        font-size:2rem;
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
