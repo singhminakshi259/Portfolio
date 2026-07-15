@@ -13,6 +13,7 @@ html{
     scroll-behavior:smooth;
 }
 
+
 body{
     background:#0f172a;
     color:white;
@@ -21,6 +22,24 @@ body{
 /* ===========================
       Navigation Bar
 =========================== */
+
+nav{
+
+position:fixed;
+
+width:100%;
+
+top:0;
+
+left:0;
+
+background:rgba(15,23,42,.8);
+
+backdrop-filter:blur(12px);
+
+z-index:1000;
+
+}
 
 .navbar{
 
@@ -212,6 +231,15 @@ body{
 
     border:5px solid #38bdf8;
 
+    transition:.4s;
+
+}
+
+
+.hero-image img:hover{
+
+transform:scale(1.05);
+
 }
 
 /* ===========================
@@ -294,7 +322,9 @@ body{
 
 .card:hover{
 
-    transform:translateY(-10px);
+    /* transform:translateY(-10px); */
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
 
     border-color:#38bdf8;
 
@@ -376,7 +406,8 @@ body{
 
 .skills-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
 
 }
 
@@ -510,7 +541,9 @@ border:1px solid rgba(255,255,255,.08);
 
 .project-card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-8px) scale(1.02);
+
+box-shadow:0 15px 30px rgba(0,0,0,.25);
 
 }
 
@@ -746,7 +779,8 @@ margin-bottom:20px;
 
 .semester-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
 
 }
 
@@ -1189,5 +1223,39 @@ RESPONSIVE DESIGN
         grid-template-columns:1fr;
 
     }
+
+}
+
+::selection{
+
+background:#38bdf8;
+
+color:#0f172a;
+
+}
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#38bdf8;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#0ea5e9;
 
 }
